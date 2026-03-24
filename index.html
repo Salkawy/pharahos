@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chey ❤️</title>
+<style>
+body {margin:0;font-family:Arial;background:black;color:white;text-align:center;overflow:hidden;}
+.container {position:relative;top:20%;}
+img {width:200px;border-radius:20px;box-shadow:0 0 20px pink;}
+h1 {font-size:2.5em;color:pink;}
+button {padding:15px 30px;font-size:1.2em;border:none;border-radius:10px;background:pink;color:black;cursor:pointer;}
+#msg {margin-top:20px;font-size:1.5em;}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Chey, you just unlocked my heart 💘</h1>
+<img src="chey.jpg" alt="Chey">
+<br><br>
+<button onclick="rizz()">Click for Rizz 😏</button>
+<div id="msg"></div>
+</div>
+<script>
+const lines = [
+"Are you WiFi? Because I'm feeling a strong connection 📶❤️",
+"Are you Google? Because you got everything I’ve been searching for 🔍",
+"Even my code compiles better when you're around 😌",
+"I was gonna play it cool… but you broke the system 💔➡️❤️",
+"You’re not a bug… you’re my favorite feature 😍"
+];
+function rizz(){
+ document.getElementById('msg').innerText = lines[Math.floor(Math.random()*lines.length)];
+}
+</script>
+</body>
+</html>
